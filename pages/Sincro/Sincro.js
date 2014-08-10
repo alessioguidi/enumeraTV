@@ -99,13 +99,7 @@ dojo.declare("Sincro", wm.Page, {
             fileURL,
             function(entry) {
                 alert("download complete: " + entry.toURL());
-                this.progressBar1.setProgress(50);
-                var myList;
-                $.getJSON(entry.toURL())
-                    .done(function (data) {
-                    myList = data;
-                });                
-                app.varClienti.setData(myList);
+
             },
             function(error) {
                 alert("download error source " + error.source);
@@ -119,6 +113,14 @@ dojo.declare("Sincro", wm.Page, {
                 }
             }
         );
+        
+        this.progressBar1.setProgress(50);
+        var myList;
+        $.getJSON(fileURL)
+                    .done(function (data) {
+                    myList = data;
+            });                
+        app.varClienti.setData(myList);
 	},
 	_end: 0
 });
