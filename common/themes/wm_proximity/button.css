@@ -1,0 +1,73 @@
+/* GROUP: Standard Button */
+/* dijitReset needed for popupButton */
+.wm_proximity .wmbutton,
+.wm_proximity button.wmbutton, /* mostly to clobber .dj_ie .wmbutton in default/theme.css */
+.wm_proximity .wmbutton .dijitReset {
+	font-family: sans-serif;
+	font-size: 12px;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+.wm_proximity .wmbutton {
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+/* 	box-shadow: 4px 4px 4px black; // THEMER: DISABLED */
+/* 	-webkit-box-shadow: 4px 4px 4px black; // THEMER: DISABLED */
+	background-image: -webkit-gradient(linear, center top, center bottom, from(#c90a0a), color-stop(50%,#980101), to(#980101));
+	background-image: -moz-linear-gradient(top, #c90a0a 0%,#980101 50%,#980101 100%);
+	background-image: -o-linear-gradient(top, #c90a0a 0%,#980101 50%,#980101 100%);
+	background-image: -ms-linear-gradient(top, #c90a0a 0%,#980101 50%,#980101 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c90a0a', endColorstr='#980101',GradientType=0);
+}
+
+/* GROUP: Hover State */
+ .wm_proximity   .wmbutton:hover {
+ 	color: #FFFFFF;
+	font-weight: bold;
+        box-shadow: 0px 0px 0px black;    
+	background-color: #5d6ea3;
+	background-image: none;
+	filter: none;
+}
+
+
+/* GROUP: Active State */
+/* button.wmbutton required instead of .wmbutton for IE8 */
+.wm_proximity   button.wmbutton.toggleButtonDown,
+.wm_proximity   .wmbutton.Active,
+.wm_proximity   .wmbutton.Active:hover,
+.wm_proximity   .wmbutton:active,
+.wm_proximity   .wmbutton:hover:active {
+	color: #FFFFFF;
+	font-weight: bold;
+	box-shadow: 4px 4px 4px black;
+	background-color: #5d6ea3;
+	background-image: none;
+	filter: none;
+}
+
+/* GROUP: Focus State */
+/* NOTE: This occurs when the user tabs to the button.
+  It may also occur when the user clicks the button */
+.wm_proximity   .wmbutton:focus {
+     outline: solid 1px #9999ff;
+}
+
+/* GROUP: Popup Menu */
+.wm_proximity .wmbutton.wmPopupButton .popupIcon {
+   background-image: url(lib/wm/base/widget/themes/wm_default/images/comboArrowDownDark.png);
+   background-position: 0% 50%;
+}
+
+/* GROUP: Disabled Button */
+.wm_proximity .Disabled.wmbutton,
+.wm_proximity .Disabled.wmbutton:hover,
+.wm_proximity .Disabled.wmbutton:active,
+.wm_proximity .Disabled.wmbutton:active:hover {
+  color: #FFFFFF;
+  font-weight: bold;
+  box-shadow: 0px 0px 0px black;
+  background-color: #333333;
+  background-image: none;
+  opacity: 0.65;
+}

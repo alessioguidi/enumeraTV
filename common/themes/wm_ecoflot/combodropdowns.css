@@ -1,0 +1,32 @@
+/* GROUP: ComboBox Drop-down Box */
+.wm_ecoflot .dijitPopup .dijitCalendarMonthMenu,
+.wm_ecoflot  ul.dijitMenu {
+	background-color: #ffe773;
+	background-image: none;
+	filter: none;
+    border: solid 1px black;
+    border-top: solid 1px #999999;
+    box-shadow: 3px 3px 4px black;
+}
+
+/* GROUP: ComboBox Drop-down Items */
+.wm_ecoflot .dijitPopup .dijitCalendarMonthLabel,
+.wm_ecoflot  ul.dijitMenu .dijitMenuItem {
+    padding: 4px 5px;
+    text-align: left;
+    font-size: 12px;
+    font-family: sans-serif;
+	color: #876ed7;
+    font-weight: bold;
+    background-color: transparent; /* THEMER: IGNORE */
+    border-bottom: solid 1px #aaaaaa;
+}
+
+
+/* GROUP: ComboBox Item Hover */
+.wm_ecoflot .dijitPopup .dijitCalendarMonthLabel .dijitMenuItemSelected,
+.wm_ecoflot  ul.dijitMenu .dijitMenuItem.dijitMenuItemSelected {
+	color: #200772;
+    background-color: transparent; /* THEMER: IGNORE */
+    border-bottom: solid 1px #AAAAAA;
+}

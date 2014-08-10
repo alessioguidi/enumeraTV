@@ -1,0 +1,48 @@
+
+/* GROUP: Dialog Footer */
+.wm_totem .dialogfooter,
+.wm_totem .wmpagedialog-controlspanel {
+/* 	background-color: #444444; // THEMER: DISABLED */
+/* 	background-image: none; // THEMER: DISABLED */
+/* 	filter: none; // THEMER: DISABLED */
+}
+
+/* GROUP: Dialog Footer Buttons */
+.wm_totem .dialogfooter .wmbutton {
+/* 	font-family: sans-serif; // THEMER: DISABLED */
+/* 	font-size: 12px; // THEMER: DISABLED */
+/* 	color: #ffffff; // THEMER: DISABLED */
+/* 	font-weight: bold; // THEMER: DISABLED */
+/* 	background-color: rgb(68, 68, 68); // THEMER: DISABLED */
+/* 	background-image: none; // THEMER: DISABLED */
+/* 	filter: none; // THEMER: DISABLED */
+/* 	box-shadow: 4px 4px 4px black; // THEMER: DISABLED */
+/* 	-webkit-box-shadow: 4px 4px 4px black; // THEMER: DISABLED */
+/* 	border-radius: 4px; // THEMER: DISABLED */
+/* 	-webkit-border-radius: 4px; // THEMER: DISABLED */
+}
+
+/* GROUP: Footer Buttons (Hover) */
+.wm_totem .dialogfooter .wmbutton:hover {
+/* 	color: #ffffff; // THEMER: DISABLED */
+/* 	background-color: rgb(68, 68, 68); // THEMER: DISABLED */
+/* 	background-image: none; // THEMER: DISABLED */
+/* 	filter: none; // THEMER: DISABLED */
+/* 	box-shadow: 4px 4px 4px black; // THEMER: DISABLED */
+/* 	-webkit-box-shadow: 4px 4px 4px black; // THEMER: DISABLED */
+}
+
+/* GROUP: Footer Buttons (Active) */
+.wm_totem .dialogfooter button.wmbutton.toggleButtonDown,
+.wm_totem .dialogfooter .wmbutton.Active,
+.wm_totem .dialogfooter .wmbutton:active,
+.wm_totem .dialogfooter .wmbutton.Active:hover,
+.wm_totem .dialogfooter .wmbutton:active:hover {
+/* 	color: #ffffff; // THEMER: DISABLED */
+/* 	background-color: rgb(68, 68, 68); // THEMER: DISABLED */
+/* 	background-image: none; // THEMER: DISABLED */
+/* 	filter: none; // THEMER: DISABLED */
+/* 	box-shadow: 4px 4px 4px black; // THEMER: DISABLED */
+/* 	-webkit-box-shadow: 4px 4px 4px black; // THEMER: DISABLED */
+}
+

@@ -1,0 +1,140 @@
+/* GROUP: Standard Tab Button */
+.wm_fleetup .wmtablayers .wmtablayers-tab,
+.wm_fleetup .wmtablayers button.wmtablayers-verticaltab {
+/* 	font-family: sans-serif; // THEMER: DISABLED */
+/* 	color: #ffffff; // THEMER: DISABLED */
+	font-weight: bold;
+/* 	font-size: 12px; // THEMER: DISABLED */
+	background-color: rgb(243, 199, 124);
+	background-image: none;
+	filter: none;
+}
+.wm_fleetup .wmtablayers .wmtablayers-tab {
+
+	height: 18px;
+	margin-left: 4px;
+	border-radius: 2px 2px 0px 0px;
+	-webkit-border-radius: 2px 2px 0px 0px;
+    box-shadow: -1px 1px 1px #444444; 
+
+    border-width: 1px 1px 0px 1px;
+    border-style: solid;
+	border-bottom-color: transparent;
+	border-top-color: #444444; 
+	border-left-color:#444444; 
+	border-right-color: #444444;
+}
+.dj_ff .wm_fleetup .wmtablayers .wmtablayers-tab {
+       box-shadow: 0 0 0 black !important; /* THEMER: HIDE */
+}
+/* GROUP: First Tab */
+.wm_fleetup .wmtablayers-tab:first-child {
+    margin-left: 0px; 
+}
+
+
+/* GROUP: Standard Selected Tab Button */
+.wm_fleetup .wmtablayers .wmtablayers-verticaltab.wmtablayers-selected,
+.wm_fleetup .wmtablayers .wmtablayers-verticaltab.wmtablayers-selected:hover,
+.wm_fleetup .wmtablayers .wmtablayers-tab.wmtablayers-selected,
+.wm_fleetup .wmtablayers .wmtablayers-tab.wmtablayers-selected:hover {
+	background-color: rgb(89, 118, 160);
+	background-image: none;
+	filter: none;
+}
+.wm_fleetup .wmtablayers .wmtablayers-tab.wmtablayers-selected,
+.wm_fleetup .wmtablayers .wmtablayers-tab.wmtablayers-selected:hover {
+    box-shadow: -1px 1px 1px #444444; 
+	top: 0;
+    /* NOTE: To create different values of top for different browsers, use
+     .dj_ie .wm_fleetup .wmtablayers .wmtablayers-tab.wmtablayers-selected, 
+     .dj_ff .wm_fleetup .wmtablayers .wmtablayers-tab.wmtablayers-selected,
+     .dj_webkit .wm_fleetup .wmtablayers .wmtablayers-tab.wmtablayers-selected */
+}
+
+/* GROUP: Tab Button with Focus */
+.wm_fleetup .wmtablayers .wmtablayers-verticaltab:focus,
+.wm_fleetup .wmtablayers .wmtablayers-tab:focus {
+	outline: solid 0px ;
+}
+
+/* GROUP: Tab Button with Hover */
+.wm_fleetup .wmtablayers .wmtablayers-tab:hover,
+.wm_fleetup .wmtablayers .wmtablayers-verticaltab:hover {
+	color: #ffffff;
+	background-color: #444444; 
+	background-image: none;
+        filter: none;
+}
+.wm_fleetup .wmtablayers .wmtablayers-tab:hover {
+    box-shadow: inherit;
+}
+
+/* GROUP: Tab Button with Mouse Down */
+/* NOTE: This does not appear to work in firefox at design time but is fine at runtime */
+.wm_fleetup .wmtablayers .wmtablayers-tab:active,
+.wm_fleetup .wmtablayers .wmtablayers-verticaltab:active,
+.wm_fleetup .wmtablayers .wmtablayers-tab:active:.focus,
+.wm_fleetup .wmtablayers .wmtablayers-verticaltab:active:focus {
+color: #FFFFFF; 
+	background-color: transparent;
+	background-image: none;
+	filter: none;
+}
+.wm_fleetup .wmtablayers .wmtablayers-tab:active,
+.wm_fleetup .wmtablayers .wmtablayers-tab:active:focus {
+    box-shadow: 0px 0px 0px #444444; 
+}
+
+
+/* GROUP: Layer Borders */
+.wm_fleetup .wmtablayers  .wmTabLayers-client > .wmlayer {
+	border-radius: 2px !important;
+	-webkit-border-radius: 2px !important;
+}
+
+/* GROUP: Tab Bar */
+.wm_fleetup .wmtablayers div.wmtablayers-tabbar {
+   background: transparent;
+}
+
+
+
+/* GROUP: Vertical Tab Buttons */
+.wm_fleetup .wmtablayers button.wmtablayers-verticaltab {
+	font-size: 9px;
+    width: 95%;
+    margin-left: 5%;
+    margin-bottom: 5px;
+    border-bottom-left-radius: 4px; 
+    border-top-left-radius: 4px; 
+    border-width: 0px 1px 1px 1px;
+    border-style: solid;
+	border-bottom-color: #444444;
+	border-top-color: #444444; 
+	border-left-color:#444444; 
+	border-right-color: transparent;
+    box-shadow: -1px 1px 1px #444444; 
+}
+
+/* GROUP: First Vertical Tab */
+.wm_fleetup .wmtablayers .wmtablayers-verticaltab:first-child {
+    margin-top: 8px;
+}
+
+/* GROUP: Vertical Tab Buttons with Hover */
+.wm_fleetup .wmtablayers .wmtablayers-verticaltab:hover {
+    box-shadow: inherit;
+}
+
+/* GROUP: Vertical Selected Tab Buttons */
+.wm_fleetup .wmtablayers .wmtablayers-verticaltab.wmtablayers-selected {
+    box-shadow: inherit;
+/*  border: solid 1px black; // THEMER: DISABLED */
+}
+
+/* GROUP: Vertical Tab with Mouse Down */
+.wm_fleetup .wmtablayers .wmtablayers-verticaltab:active,
+.wm_fleetup .wmtablayers .wmtablayers-verticaltab:active:focus {
+    box-shadow: 0px 0px 0px #444444; 
+}

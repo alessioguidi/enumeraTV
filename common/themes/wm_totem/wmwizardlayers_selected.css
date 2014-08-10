@@ -1,0 +1,139 @@
+/* GROUP: Standard Tab Button */
+.wm_totem .wmwizardlayers_selected.wmtablayers .wmtablayers-tab,
+.wm_totem .wmwizardlayers_selected.wmtablayers button.wmtablayers-verticaltab {
+/* font-family: sans-serif; // THEMER: DISABLED */
+/* color: #FFFFFF; // THEMER: DISABLED */
+/* font-weight: bold; // THEMER: DISABLED */
+/* font-size: 12px; // THEMER: DISABLED */
+/* background-color: red; // THEMER: DISABLED */
+/* background-image: none; // THEMER: DISABLED */
+/* filter: none; // THEMER: DISABLED */
+}
+.wm_totem .wmwizardlayers_selected.wmtablayers .wmtablayers-tab {
+
+/* height: 12px; // THEMER: DISABLED */
+/* margin-left: 8px; // THEMER: DISABLED */
+/* border-top-left-radius: 8px; // THEMER: DISABLED */
+/* border-top-right-radius: 8px; // THEMER: DISABLED */
+/* box-shadow: -1px 1px 1px #444444; // THEMER: DISABLED */
+
+/* border-width: 1px 1px 0px 1px; // THEMER: DISABLED */
+/* border-style: solid; // THEMER: DISABLED */
+/* border-bottom-color: transparent; // THEMER: DISABLED */
+/* border-top-color: #444444; // THEMER: DISABLED */
+/* border-left-color: #444444; // THEMER: DISABLED */
+/* border-right-color: #444444; // THEMER: DISABLED */
+}
+.dj_ff .wm_totem .wmwizardlayers_selected.wmtablayers .wmtablayers-tab {
+       box-shadow: 0 0 0 black !important; /* THEMER: HIDE */
+}
+/* GROUP: First Tab */
+.wm_totem .wmtablayers-tab:first-child {
+/* margin-left: 0px; // THEMER: DISABLED */
+}
+
+
+/* GROUP: Standard Selected Tab Button */
+.wm_totem .wmwizardlayers_selected.wmtablayers .wmtablayers-verticaltab.wmtablayers-selected,
+.wm_totem .wmwizardlayers_selected.wmtablayers .wmtablayers-verticaltab.wmtablayers-selected:hover,
+.wm_totem .wmwizardlayers_selected.wmtablayers .wmtablayers-tab.wmtablayers-selected,
+.wm_totem .wmwizardlayers_selected.wmtablayers .wmtablayers-tab.wmtablayers-selected:hover {
+/* background-color: red; // THEMER: DISABLED */
+/* background-image: none; // THEMER: DISABLED */
+/* filter: none; // THEMER: DISABLED */
+}
+.wm_totem .wmwizardlayers_selected.wmtablayers .wmtablayers-tab.wmtablayers-selected,
+.wm_totem .wmwizardlayers_selected.wmtablayers .wmtablayers-tab.wmtablayers-selected:hover {
+/* box-shadow: -1px 1px 1px #444444; // THEMER: DISABLED */
+/* top: 2px; // THEMER: DISABLED */
+    /* NOTE: To create different values of top for different browsers, use
+     .dj_ie .wm_totem .wmwizardlayers_selected.wmtablayers .wmtablayers-tab.wmtablayers-selected, 
+     .dj_ff .wm_totem .wmwizardlayers_selected.wmtablayers .wmtablayers-tab.wmtablayers-selected,
+     .dj_webkit .wm_totem .wmwizardlayers_selected.wmtablayers .wmtablayers-tab.wmtablayers-selected */
+}
+
+/* GROUP: Tab Button with Focus */
+.wm_totem .wmwizardlayers_selected.wmtablayers .wmtablayers-verticaltab:focus,
+.wm_totem .wmwizardlayers_selected.wmtablayers .wmtablayers-tab:focus {
+/* outline-width: 0; // THEMER: DISABLED */
+}
+
+/* GROUP: Tab Button with Hover */
+.wm_totem .wmwizardlayers_selected.wmtablayers .wmtablayers-tab:hover,
+.wm_totem .wmwizardlayers_selected.wmtablayers .wmtablayers-verticaltab:hover {
+/* color: #FFFFFF; // THEMER: DISABLED */
+/* background-color: #444444; // THEMER: DISABLED */
+/* background-image: none; // THEMER: DISABLED */
+/* filter: none; // THEMER: DISABLED */
+}
+.wm_totem .wmwizardlayers_selected.wmtablayers .wmtablayers-tab:hover {
+/* box-shadow: inherit; // THEMER: DISABLED */
+}
+
+/* GROUP: Tab Button with Mouse Down */
+/* NOTE: This does not appear to work in firefox at design time but is fine at runtime */
+.wm_totem .wmwizardlayers_selected.wmtablayers .wmtablayers-tab:active,
+.wm_totem .wmwizardlayers_selected.wmtablayers .wmtablayers-verticaltab:active,
+.wm_totem .wmwizardlayers_selected.wmtablayers .wmtablayers-tab:active:.focus,
+.wm_totem .wmwizardlayers_selected.wmtablayers .wmtablayers-verticaltab:active:focus {
+/* color: #FFFFFF; // THEMER: DISABLED */
+/* background-color: #444444; // THEMER: DISABLED */
+/* background-image: none; // THEMER: DISABLED */
+/* filter: none; // THEMER: DISABLED */
+}
+.wm_totem .wmwizardlayers_selected.wmtablayers .wmtablayers-tab:active,
+.wm_totem .wmwizardlayers_selected.wmtablayers .wmtablayers-tab:active:focus {
+/* box-shadow: 0px 0px 0px #444444; // THEMER: DISABLED */
+}
+
+
+/* GROUP: Layer Borders */
+.wm_totem .wmwizardlayers_selected.wmtablayers  .wmTabLayers-client > .wmlayer {
+/* border-radius: 4px !important; // THEMER: DISABLED */
+}
+
+/* GROUP: Tab Bar */
+.wm_totem .wmwizardlayers_selected.wmtablayers div.wmtablayers-tabbar {
+/* background: transparent; // THEMER: DISABLED */
+}
+
+
+
+/* GROUP: Vertical Tab Buttons */
+.wm_totem .wmwizardlayers_selected.wmtablayers button.wmtablayers-verticaltab {
+/* font-size: 9; // THEMER: DISABLED */
+/* width: 95%; // THEMER: DISABLED */
+/* margin-left: 5%; // THEMER: DISABLED */
+/* margin-bottom: 5px; // THEMER: DISABLED */
+/* border-bottom-left-radius: 4px; // THEMER: DISABLED */
+/* border-top-left-radius: 4px; // THEMER: DISABLED */
+/* border-width: 0px 1px 1px 1px; // THEMER: DISABLED */
+/* border-style: solid; // THEMER: DISABLED */
+/* border-bottom-color: #444444; // THEMER: DISABLED */
+/* border-top-color: #444444; // THEMER: DISABLED */
+/* border-left-color: #444444; // THEMER: DISABLED */
+/* border-right-color: transparent; // THEMER: DISABLED */
+/* box-shadow: -1px 1px 1px #444444; // THEMER: DISABLED */
+}
+
+/* GROUP: First Vertical Tab */
+.wm_totem .wmwizardlayers_selected.wmtablayers .wmtablayers-verticaltab:first-child {
+/* margin-top: 8px; // THEMER: DISABLED */
+}
+
+/* GROUP: Vertical Tab Buttons with Hover */
+.wm_totem .wmwizardlayers_selected.wmtablayers .wmtablayers-verticaltab:hover {
+/* box-shadow: inherit; // THEMER: DISABLED */
+}
+
+/* GROUP: Vertical Selected Tab Buttons */
+.wm_totem .wmwizardlayers_selected.wmtablayers .wmtablayers-verticaltab.wmtablayers-selected {
+/* box-shadow: inherit; // THEMER: DISABLED */
+/*  border: solid 1px black; // THEMER: DISABLED */
+}
+
+/* GROUP: Vertical Tab with Mouse Down */
+.wm_totem .wmwizardlayers_selected.wmtablayers .wmtablayers-verticaltab:active,
+.wm_totem .wmwizardlayers_selected.wmtablayers .wmtablayers-verticaltab:active:focus {
+/* box-shadow: 0px 0px 0px #444444; // THEMER: DISABLED */
+}

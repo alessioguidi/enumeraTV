@@ -1,0 +1,71 @@
+/* GROUP: Standard Button */
+/* dijitReset needed for popupButton */
+.wm_fleetup .wmbutton,
+.wm_fleetup button.wmbutton, /* mostly to clobber .dj_ie .wmbutton in default/theme.css */
+.wm_fleetup .wmbutton .dijitReset {
+	font-family: sans-serif;
+	font-size: 12px;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+.wm_fleetup .wmbutton {
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+/* 	box-shadow: 4px 4px 4px black; // THEMER: DISABLED */
+/* 	-webkit-box-shadow: 4px 4px 4px black; // THEMER: DISABLED */
+	background-color: #c89b4d;
+	background-image: none;
+	filter: none;
+}
+
+/* GROUP: Hover State */
+ .wm_fleetup   .wmbutton:hover {
+ 	color: #FFFFFF;
+	font-weight: bold;
+        box-shadow: 0px 0px 0px black;    
+	background-color: #375684;
+	background-image: none;
+	filter: none;
+}
+
+
+/* GROUP: Active State */
+/* button.wmbutton required instead of .wmbutton for IE8 */
+.wm_fleetup   button.wmbutton.toggleButtonDown,
+.wm_fleetup   .wmbutton.Active,
+.wm_fleetup   .wmbutton.Active:hover,
+.wm_fleetup   .wmbutton:active,
+.wm_fleetup   .wmbutton:hover:active {
+	color: #FFFFFF;
+	font-weight: bold;
+	box-shadow: 4px 4px 4px black;
+	background-color: #375684;
+	background-image: none;
+	filter: none;
+}
+
+/* GROUP: Focus State */
+/* NOTE: This occurs when the user tabs to the button.
+  It may also occur when the user clicks the button */
+.wm_fleetup   .wmbutton:focus {
+     outline: solid 1px #9999ff;
+}
+
+/* GROUP: Popup Menu */
+.wm_fleetup .wmbutton.wmPopupButton .popupIcon {
+   background-image: url(lib/wm/base/widget/themes/wm_default/images/comboArrowDownDark.png);
+   background-position: 0% 50%;
+}
+
+/* GROUP: Disabled Button */
+.wm_fleetup .Disabled.wmbutton,
+.wm_fleetup .Disabled.wmbutton:hover,
+.wm_fleetup .Disabled.wmbutton:active,
+.wm_fleetup .Disabled.wmbutton:active:hover {
+  color: #FFFFFF;
+  font-weight: bold;
+  box-shadow: 0px 0px 0px black;
+  background-color: #333333;
+  background-image: none;
+  opacity: 0.65;
+}

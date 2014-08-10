@@ -1,0 +1,72 @@
+/* GROUP: Standard Button */
+/* dijitReset needed for popupButton */
+.wm_proximity .SubmitButton.wmbutton,
+.wm_proximity button.SubmitButton.wmbutton, /* mostly to clobber .dj_ie .SubmitButton.wmbutton in default/theme.css */
+.wm_proximity .SubmitButton.wmbutton .dijitReset {
+/* font-family: sans-serif; // THEMER: DISABLED */
+/* font-size: 12px; // THEMER: DISABLED */
+/* color: #FFFFFF; // THEMER: DISABLED */
+/* font-weight: bold; // THEMER: DISABLED */
+}
+.wm_proximity .SubmitButton.wmbutton {
+/* -webkit-border-radius: 4px; // THEMER: DISABLED */
+/* border-radius: 4px; // THEMER: DISABLED */
+/* box-shadow: 4px 4px 4px black; // THEMER: DISABLED */
+	background-image: -webkit-gradient(linear, center top, center bottom, from(#0101b7), color-stop(50%,#980101), to(#980101));
+	background-image: -moz-linear-gradient(top, #0101b7 0%,#980101 50%,#980101 100%);
+	background-image: -o-linear-gradient(top, #0101b7 0%,#980101 50%,#980101 100%);
+	background-image: -ms-linear-gradient(top, #0101b7 0%,#980101 50%,#980101 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0101b7', endColorstr='#980101',GradientType=0);
+}
+
+/* GROUP: Hover State */
+ .wm_proximity   .wmbutton:hover {
+/* color: #FFFFFF; // THEMER: DISABLED */
+/* font-weight: bold; // THEMER: DISABLED */
+/* box-shadow: 0px 0px 0px black; // THEMER: DISABLED */
+/* background-color: #333333; // THEMER: DISABLED */
+/* background-image: none; // THEMER: DISABLED */
+/* filter: none; // THEMER: DISABLED */
+}
+
+
+/* GROUP: Active State */
+/* button.SubmitButton.wmbutton required instead of .SubmitButton.wmbutton for IE8 */
+.wm_proximity   button.SubmitButton.wmbutton.toggleButtonDown,
+.wm_proximity   .SubmitButton.wmbutton.Active,
+.wm_proximity   .SubmitButton.wmbutton.Active:hover,
+.wm_proximity   .wmbutton:active,
+.wm_proximity   .wmbutton:hover:active {
+/* color: #FFFFFF; // THEMER: DISABLED */
+/* font-weight: bold; // THEMER: DISABLED */
+/* box-shadow: 4px 4px 4px black; // THEMER: DISABLED */
+/* background-color: #333333; // THEMER: DISABLED */
+/* background-image: none; // THEMER: DISABLED */
+/* filter: none; // THEMER: DISABLED */
+}
+
+/* GROUP: Focus State */
+/* NOTE: This occurs when the user tabs to the button.
+  It may also occur when the user clicks the button */
+.wm_proximity   .wmbutton:focus {
+/* outline: solid 1px #9999ff; // THEMER: DISABLED */
+}
+
+/* GROUP: Popup Menu */
+.wm_proximity .SubmitButton.wmbutton.wmPopupButton .popupIcon {
+/* background-image: url(lib/wm/base/widget/themes/wm_default/images/comboArrowDownDark.png); // THEMER: DISABLED */
+/* background-position: 0% 50%; // THEMER: DISABLED */
+}
+
+/* GROUP: Disabled Button */
+.wm_proximity .Disabled.SubmitButton.wmbutton,
+.wm_proximity .Disabled.wmbutton:hover,
+.wm_proximity .Disabled.wmbutton:active,
+.wm_proximity .Disabled.wmbutton:active:hover {
+/* color: #FFFFFF; // THEMER: DISABLED */
+/* font-weight: bold; // THEMER: DISABLED */
+/* box-shadow: 0px 0px 0px black; // THEMER: DISABLED */
+/* background-color: #333333; // THEMER: DISABLED */
+/* background-image: none; // THEMER: DISABLED */
+/* opacity: 0.65; // THEMER: DISABLED */
+}

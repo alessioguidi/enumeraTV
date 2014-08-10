@@ -1,0 +1,34 @@
+/* GROUP: ComboBox Drop-down Box */
+.wm_totem .dijitPopup .dijitCalendarMonthMenu,
+.wm_totem  ul.dijitMenu {
+/* 	background-color: rgb(255, 231, 115); // THEMER: DISABLED */
+/* 	background-image: none; // THEMER: DISABLED */
+/* 	filter: none; // THEMER: DISABLED */
+    border: solid 1px black;
+    border-top: solid 1px #999999;
+    box-shadow: 3px 3px 4px black;
+}
+
+/* GROUP: ComboBox Drop-down Items */
+.wm_totem .dijitPopup .dijitCalendarMonthLabel,
+.wm_totem  ul.dijitMenu .dijitMenuItem {
+    padding: 4px 5px;
+    text-align: left;
+	font-size: 18px;
+/* 	font-family: sans-serif; // THEMER: DISABLED */
+/* 	color: #876ed7; // THEMER: DISABLED */
+/* 	font-weight: bold; // THEMER: DISABLED */
+/* 	background-color: transparent;  // THEMER: DISABLED */ /* THEMER: IGNORE */
+/* 	background-image: none;  // THEMER: DISABLED */ /* THEMER: IGNORE */
+/* 	filter: none;  // THEMER: DISABLED */ /* THEMER: IGNORE */
+    border-bottom: solid 1px #aaaaaa;
+}
+
+
+/* GROUP: ComboBox Item Hover */
+.wm_totem .dijitPopup .dijitCalendarMonthLabel .dijitMenuItemSelected,
+.wm_totem  ul.dijitMenu .dijitMenuItem.dijitMenuItemSelected {
+	color: #7c7b83;
+    background-color: transparent; /* THEMER: IGNORE */
+    border-bottom: solid 1px #AAAAAA;
+}

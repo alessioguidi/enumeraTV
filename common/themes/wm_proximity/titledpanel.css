@@ -1,0 +1,28 @@
+/* GROUP: Container */
+.wm_proximity .wmfancypanel .wmFancyPanel-containerWidget {
+    border-top-left-radius: 0px !important; /* THEMER: HIDE */
+    border-top-right-radius: 0px !important;/* THEMER: HIDE */
+    -webkit-border-top-left-radius: 0px !important;/* THEMER: HIDE */
+    -webkit-border-top-right-radius: 0px !important;/* THEMER: HIDE */
+    box-shadow: 0px 0px 0px black !important;/* THEMER: HIDE */
+	border-radius: 0px 0px 2px 2px;
+	-webkit-border-radius: 0px 0px 2px 2px;
+    background-color: white;
+    background-image: none;
+    filter: none;
+}
+
+
+/* GROUP: Panel Title */
+.wm_proximity .wmfancypanel .wmFancyPanel-labelWidget {
+	border-radius: 2px 2px 0px 0px;
+	-webkit-border-radius: 2px 2px 0px 0px;
+
+    font-family: sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: #FFFFFF;
+	background-color: #566c8c;
+	background-image: none;
+	filter: none;
+}

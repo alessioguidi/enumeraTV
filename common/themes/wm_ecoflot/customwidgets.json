@@ -1,0 +1,15 @@
+[
+	{
+		"name": "Custom Widgets", 
+		"category": true
+	}, 
+	{
+		"name": "SubmitButton", 
+		"parentName": "Buttons", 
+		"classList": [
+			{
+				"dataValue": "wm.Button"
+			}
+		]
+	}
+]

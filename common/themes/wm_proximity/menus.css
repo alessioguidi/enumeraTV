@@ -1,0 +1,78 @@
+/* GROUP: Menu Bar Styling */
+.wm_proximity .dojoMenu .dijitMenu,
+.wm_proximity .dojoMenu .dijitMenuBar,
+.wm_proximity .dojoMenu .dijitMenuItem {
+/* 	font-family: sans-serif; // THEMER: DISABLED */
+/*  font-size: 12px; // THEMER: DISABLED */
+  font-weight: bold;
+/* 	color: black; // THEMER: DISABLED */
+
+	background-color: #ffb587;
+	background-image: none;
+	filter: none;
+}
+
+.wm_proximity .dojoMenu .dijitMenuBar .dijitMenuItem {
+  margin-right: 10px;
+}
+
+/* GROUP: Menu Bar Hover */
+.wm_proximity .dojoMenu .dijitMenuItem.dijitMenuItemHover {
+	color: #FFFFFF;
+	background-color: #c1c6c9;
+	background-image: none;
+	filter: none;
+	outline: solid 0px ;
+}
+
+/* GROUP: Menu Bar Select */
+.wm_proximity .dojoMenu .dijitMenuItem.dijitMenuItemSelected {
+	color: #ffffff;
+	background-color: #999999;
+	background-image: none;
+	filter: none;
+outline: 0px;
+}
+
+/* GROUP: Horizontal Menu Bar Icon */
+.wm_proximity .dojoMenu div.dijitMenuBar div.dijitMenuItem {
+	background: url(images/comboArrowDownDark.png) no-repeat 90% 50% !important;
+	padding-right: 25px !important;
+}
+
+/* THEMER: DO NOT SUBCLASS START */
+/* GROUP: Popup Menu Box */
+.wm_proximity .dijitMenuPopup .dijitMenuTable {
+	background-color: #179a86;
+	background-image: none;
+	filter: none;
+    border: solid 1px black;
+    border-top: solid 1px #999999;
+}
+.wm_proximity .dijitMenuPopup {
+    box-shadow: 3px 3px 4px black;
+}
+
+/* GROUP: Popup Menu Item */
+.wm_proximity .dijitPopup .dijitMenuTable .dijitMenuItem {
+    font-size: 12px;
+    font-family: sans-serif;
+    color: #FFFFFF;
+    font-weight: bold;
+	background-color: #999999; /* THEMER: IGNORE */
+	background-image: none; /* THEMER: IGNORE */
+	filter: none; /* THEMER: IGNORE */
+    border-bottom: solid 1px #AAAAAA;
+}
+
+/* GROUP: Popup Menu Item Hover/Selected */
+/* NOTE: There is no good way with dojo menus to distinguish between hover and select */
+.wm_proximity .dijitPopup .dijitMenu.dijitMenuTable .dijitMenuItem.dijitMenuItemFocused,
+.wm_proximity .dijitPopup .dijitMenu.dijitMenuTable .dijitMenuItem.dijitMenuItemSelected {
+    color: #FFFFFF;
+	background-color: #333333;
+	background-image: none;
+	filter: none;
+    outline-width: 0;
+}
+/* THEMER: DO NOT SUBCLASS END */

@@ -1,0 +1,57 @@
+
+/* GROUP: Accordion Header */
+.wm_ecoflot .wmaccordion div.wmaccordion-header {
+  font-family: sans-serif;
+  font-size: 12px;
+  color: #FFFFFF;
+  font-weight: bold;
+	background-color: #a68900;
+	background-image: none;
+	filter: none;
+  border-radius: 4px;
+}
+
+/* GROUP: Closed Header */
+.wm_ecoflot .wmaccordion div.wmaccordion-header.wmaccordion-collapsed {
+  color: #FFFFFF;
+  font-weight: bold;
+	background-color: #200772;
+	background-image: none;
+	filter: none;
+}
+
+/* GROUP: Header Hover */
+.wm_ecoflot div.wmaccordion .wmaccordion-header.wmaccordion-collapsed:hover {
+  color: #FFFFFF;
+  background-color: #666666;
+  background-image: none;
+  filter: none;
+}
+
+
+
+/* GROUP: Accordion Arrow (Selected) */
+.wm_ecoflot .wmaccordion .accordionArrowNode {
+   float: none !important; /* THEMER: HIDE */
+   position: absolute; /* THEMER: HIDE */
+   right: 5px;
+   background-image: url(images/comboArrowDownDark.png);
+   background-repeat: no-repeat;
+   background-position: 50% 50%;
+}
+.wm_ecoflot .wmaccordion .accordionArrowNode.accordionOnLeftArrowNode {
+     position: relative; /* THEMER: HIDE */
+     float: none; /* THEMER: HIDE */
+}
+
+/* GROUP: Accordion Arrow (Closed) */
+.wm_ecoflot .wmaccordion .wmaccordion-collapsed .accordionArrowNode {
+   background-image: url(images/arrowRightDark.png); 
+}
+
+
+/* GROUP: Layer Styling */
+.wm_ecoflot .wmaccordion .wmlayer.wmaccordion-content {
+    border-radius: 2px;
+    background-color: transparent;
+}

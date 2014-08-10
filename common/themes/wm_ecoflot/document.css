@@ -1,0 +1,26 @@
+/* GROUP: Main Document Styles */
+.wm_ecoflot  .wmapproot {
+   font-family: sans-serif;
+    font-size: 12px;
+	color: #000000;
+/* 	font-weight: bold; // THEMER: DISABLED */
+}
+.wm_ecoflot .wmapproot > .wmpagecontainer,
+.wm_ecoflot.wmapproot > .wmpagecontainer,
+.wm_ecoflot #studio_designer > .wmlayout {
+/* 	border-radius: 0px; // THEMER: DISABLED */
+/* 	-webkit-border-radius: 0px; // THEMER: DISABLED */
+	box-shadow: 4px 4px 4px black;
+	-webkit-box-shadow: 4px 4px 4px black;
+	background-color: #ffffff;
+	background-image: none;
+	filter: none;
+}
+
+/* IE9 has buggy display when combinding both gradients and radius.
+ * Gradients and not radius work on IE8, so we'll just do it the IE 8 way */
+.dj_ie9 .wm_ecoflot div,
+.dj_ie9 .wm_ecoflot input,
+.dj_ie9 .wm_ecoflot button {
+   border-radius: 0px !important; /* THEMER: HIDE */
+}

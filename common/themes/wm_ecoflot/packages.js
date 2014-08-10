@@ -1,0 +1,1 @@
+['Theme Widgets','SubmitButton<span class="ThemeSubclassName">Button</span>','wm.Button','wm.base.widget.Buttons.Button','Studio_paletteImageList_4','',{"_classes":{"domNode":["SubmitButton"]}}]

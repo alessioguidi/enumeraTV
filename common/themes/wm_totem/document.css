@@ -1,0 +1,26 @@
+/* GROUP: Main Document Styles */
+.wm_totem  .wmapproot {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	color: #000000;
+/* 	font-weight: normal; // THEMER: DISABLED */
+}
+.wm_totem .wmapproot > .wmpagecontainer,
+.wm_totem.wmapproot > .wmpagecontainer,
+.wm_totem #studio_designer > .wmlayout {
+/* 	border-radius: 0px; // THEMER: DISABLED */
+/* 	-webkit-border-radius: 0px; // THEMER: DISABLED */
+	box-shadow: 4px 4px 4px black;
+	-webkit-box-shadow: 4px 4px 4px black;
+	background-color: #ffffff;
+	background-image: none;
+	filter: none;
+}
+
+/* IE9 has buggy display when combinding both gradients and radius.
+ * Gradients and not radius work on IE8, so we'll just do it the IE 8 way */
+.dj_ie9 .wm_totem div,
+.dj_ie9 .wm_totem input,
+.dj_ie9 .wm_totem button {
+   border-radius: 0px !important; /* THEMER: HIDE */
+}

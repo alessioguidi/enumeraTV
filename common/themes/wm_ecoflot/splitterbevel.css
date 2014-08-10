@@ -1,0 +1,27 @@
+/* GROUP: Bevel */
+.wm_ecoflot .wmbevel {
+	background-color: #200772;
+	background-image: none;
+	filter: none;
+}
+
+/* GROUP: Splitter */
+/* NOTE: If you use gradients, then you can't use the horizontal and vertical images (which is important) */
+.wm_ecoflot div.wmsplitter-h,
+.wm_ecoflot div.wmsplitter-v {
+	background-color: #200772; /* THEMER: NO BACKGROUND IMAGE */
+}
+/* GROUP: Splitter Hover */
+.wm_ecoflot div.wmsplitter-h:hover,
+.wm_ecoflot div.wmsplitter-v:hover {
+    background-color: #444444; /* THEMER: NO BACKGROUND IMAGE */    
+}
+/* GROUP: Splitter Horizontal Image */
+.wm_ecoflot .wmsplitter-h {
+	background: url(images/splitter_bg_h.png) no-repeat 50% 50%;
+}
+
+/* GROUP: Splitter Vertical Image */
+.wm_ecoflot .wmsplitter-v {
+	background: url(images/splitter_bg_v.png) no-repeat 50% 50%;
+}

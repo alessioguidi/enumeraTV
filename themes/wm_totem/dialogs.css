@@ -1,0 +1,49 @@
+/* GROUP: Dialog Frame */
+.wm_totem .wmdialog {
+/* 	border-radius: 2px; // THEMER: DISABLED */
+/* 	-webkit-border-radius: 2px; // THEMER: DISABLED */
+	box-shadow: 2px 2px 2px black;
+	-webkit-box-shadow: 2px 2px 2px black;
+}
+
+/* GROUP: Dialog Container */
+.wm_totem .wmdialog {
+	background-color: #ffffff;
+	background-image: none;
+	filter: none;
+/* 	font-family: sans-serif; // THEMER: DISABLED */
+/* 	font-size: 12px; // THEMER: DISABLED */
+/* 	color: #ffffff; // THEMER: DISABLED */
+    font-weight: bold;
+}
+
+/* GROUP: Dialog Titlebar */
+.wm_totem .dialogtitlebar .wmlabel{
+/* 	font-family: sans-serif; // THEMER: DISABLED */
+    font-size: 12px;
+/* 	color: #ffffff; // THEMER: DISABLED */
+/* 	font-weight: bold; // THEMER: DISABLED */
+}
+
+.wm_totem .dialogtitlebar {
+	background-color: #e7e7e7;
+	background-image: none;
+	filter: none;
+}
+
+
+/* GROUP: Titlebar Buttons: Close Button */
+.wm_totem .dialogtitlebar .dialogclosebutton {
+	background: url(images/DialogIconsGray.png) no-repeat 0% 0%;
+}
+
+/* GROUP: Titlebar Buttons: Minify Button */
+.wm_totem .dialogtitlebar .dialogminifybutton {
+	background: url(images/DialogIconsGray.png) no-repeat -16px 0px;
+}
+/* GROUP: Titlebar Buttons: Maxify Button */
+.wm_totem .dialogtitlebar .dialogmaxifybutton {
+    background-image: url(images/DialogIconsGray.png);
+    background-position: -32px 0px;
+    background-repeat: no-repeat;
+}

@@ -1,0 +1,70 @@
+/* GROUP: Standard Button */
+/* dijitReset needed for popupButton */
+.wm_totem .SubmitButton.wmbutton,
+.wm_totem button.SubmitButton.wmbutton, /* mostly to clobber .dj_ie .SubmitButton.wmbutton in default/theme.css */
+.wm_totem .SubmitButton.wmbutton .dijitReset {
+/* font-family: sans-serif; // THEMER: DISABLED */
+/* font-size: 12px; // THEMER: DISABLED */
+/* color: #FFFFFF; // THEMER: DISABLED */
+/* font-weight: bold; // THEMER: DISABLED */
+}
+.wm_totem .SubmitButton.wmbutton {
+/* -webkit-border-radius: 4px; // THEMER: DISABLED */
+/* border-radius: 4px; // THEMER: DISABLED */
+/* box-shadow: 4px 4px 4px black; // THEMER: DISABLED */
+/* background-color: #333333; // THEMER: DISABLED */
+/* background-image: none; // THEMER: DISABLED */
+/* filter: none; // THEMER: DISABLED */
+}
+
+/* GROUP: Hover State */
+ .wm_totem   .wmbutton:hover {
+/* color: #FFFFFF; // THEMER: DISABLED */
+/* font-weight: bold; // THEMER: DISABLED */
+/* box-shadow: 0px 0px 0px black; // THEMER: DISABLED */
+/* background-color: #333333; // THEMER: DISABLED */
+/* background-image: none; // THEMER: DISABLED */
+/* filter: none; // THEMER: DISABLED */
+}
+
+
+/* GROUP: Active State */
+/* button.SubmitButton.wmbutton required instead of .SubmitButton.wmbutton for IE8 */
+.wm_totem   button.SubmitButton.wmbutton.toggleButtonDown,
+.wm_totem   .SubmitButton.wmbutton.Active,
+.wm_totem   .SubmitButton.wmbutton.Active:hover,
+.wm_totem   .wmbutton:active,
+.wm_totem   .wmbutton:hover:active {
+/* color: #FFFFFF; // THEMER: DISABLED */
+/* font-weight: bold; // THEMER: DISABLED */
+/* box-shadow: 4px 4px 4px black; // THEMER: DISABLED */
+/* background-color: #333333; // THEMER: DISABLED */
+/* background-image: none; // THEMER: DISABLED */
+/* filter: none; // THEMER: DISABLED */
+}
+
+/* GROUP: Focus State */
+/* NOTE: This occurs when the user tabs to the button.
+  It may also occur when the user clicks the button */
+.wm_totem   .wmbutton:focus {
+/* outline: solid 1px #9999ff; // THEMER: DISABLED */
+}
+
+/* GROUP: Popup Menu */
+.wm_totem .SubmitButton.wmbutton.wmPopupButton .popupIcon {
+/* background-image: url(lib/wm/base/widget/themes/wm_default/images/comboArrowDownDark.png); // THEMER: DISABLED */
+/* background-position: 0% 50%; // THEMER: DISABLED */
+}
+
+/* GROUP: Disabled Button */
+.wm_totem .Disabled.SubmitButton.wmbutton,
+.wm_totem .Disabled.wmbutton:hover,
+.wm_totem .Disabled.wmbutton:active,
+.wm_totem .Disabled.wmbutton:active:hover {
+/* color: #FFFFFF; // THEMER: DISABLED */
+/* font-weight: bold; // THEMER: DISABLED */
+/* box-shadow: 0px 0px 0px black; // THEMER: DISABLED */
+/* background-color: #333333; // THEMER: DISABLED */
+/* background-image: none; // THEMER: DISABLED */
+/* opacity: 0.65; // THEMER: DISABLED */
+}
