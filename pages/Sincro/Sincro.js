@@ -87,6 +87,7 @@ dojo.declare("Sincro", wm.Page, {
 
     },
 	button1Click: function(inSender) {
+        this.progressBar1.setProgress(0);
 		// !! Assumes variable fileURL contains a valid URL to a path on the device,
 //    for example, cdvfile://localhost/persistent/path/to/downloads/
         var fileURL = "cdvfile://localhost/persistent/enumera/ciccio.json";
@@ -98,6 +99,13 @@ dojo.declare("Sincro", wm.Page, {
             fileURL,
             function(entry) {
                 alert("download complete: " + entry.toURL());
+                this.progressBar1.setProgress(50);
+                var myList;
+                $.getJSON(entry.toURL())
+                    .done(function (data) {
+                    myList = data;
+                });                
+                app.varClienti.setData(myList);
             },
             function(error) {
                 alert("download error source " + error.source);

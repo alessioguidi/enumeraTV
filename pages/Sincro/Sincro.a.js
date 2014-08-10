@@ -73,6 +73,7 @@ timeout: app.parGpsTimeout.getValue("dataValue"),
 enableHighAccuracy: false});
 },
 button1Click: function(inSender) {
+this.progressBar1.setProgress(0);
 // !! Assumes variable fileURL contains a valid URL to a path on the device,
 //    for example, cdvfile://localhost/persistent/path/to/downloads/
 var fileURL = "cdvfile://localhost/persistent/enumera/ciccio.json";
@@ -83,6 +84,13 @@ uri,
 fileURL,
 function(entry) {
 alert("download complete: " + entry.toURL());
+this.progressBar1.setProgress(50);
+var myList;
+$.getJSON(entry.toURL())
+.done(function (data) {
+myList = data;
+});
+app.varClienti.setData(myList);
 },
 function(error) {
 alert("download error source " + error.source);
@@ -102,7 +110,8 @@ _end: 0
 
 Sincro.widgets = {
 layoutBox1: ["wm.Layout", {"horizontalAlign":"center","verticalAlign":"top"}, {}, {
-button1: ["wm.Button", {"border":"1","caption":"Clienti","height":"80px","margin":"4"}, {"onclick":"button1Click"}]
+button1: ["wm.Button", {"border":"1","caption":"Clienti","height":"80px","margin":"4"}, {"onclick":"button1Click"}],
+progressBar1: ["wm.dijit.ProgressBar", {"height":"48px","progress":30,"styles":{},"width":"360px"}, {}]
 }]
 };
 
