@@ -106,7 +106,6 @@ function onSearchButton() {
 alert("You hit the search button!");
 }
 */
-alert("ci sono");
 // load dei dati
 function loadJSON(url) {
 return jQuery.ajax({
@@ -119,32 +118,7 @@ var fileURL = "cdvfile://localhost/persistent/enumera/ciccio.txt";
 var clientiLocal = loadJSON(fileURL);
 if (clientiLocal){
 alert ("Carico clienti");
-app.varClienti.setData();
-}
-var onSuccess = function(position) {
-/*
-app.deviceInformation.setData([{
-"uuid":device.uuid,
-"name":device.name,
-"model":device.model,
-"platform":device.platform,
-"version":device.version,
-"phonenumber":"-",
-"latitude": position.coords.latitude,
-"longitude": position.coords.longitude,
-"altitude": position.coords.altitude,
-"speed": position.coords.speed,
-"gpstimestamp": position.timestamp,
-"dataValue": 0}]);
-//window.plugin.backgroundMode.disable();
-app.serviceNotify.update();
-*/
-};
-// onError Callback receives a PositionError object
-//
-function onError(error) {
-alert('code: '    + error.code    + '\n' +
-'message: ' + error.message + '\n');
+app.varClienti.setData(clientiLocal);
 }
 function onBackButton() {
 //navigator.notification.confirm("Are you sure want to exit from App?", onConfirmExit, "Confirmation", "Yes,No");
