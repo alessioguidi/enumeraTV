@@ -99,8 +99,11 @@ dojo.declare("Sincro", wm.Page, {
             fileURL,
             function(entry) {
                 alert("download complete: " + entry.toURL());
-
-            },
+                $.getJSON(fileURL, function(json) {
+                    app.varClienti.setData(json);
+                    app.toastSuccess("Clienti sincronizzati con successso");
+                });
+	        },
             function(error) {
                 alert("download error source " + error.source);
                 alert("download error target " + error.target);
@@ -114,11 +117,7 @@ dojo.declare("Sincro", wm.Page, {
             }
         );
         
-    	$.getJSON(fileURL, function(json) {
-            app.varClienti.setData(json);
-            app.toastSuccess("Clienti sincronizzati con successso");
-        });
-	},
+    },
     
 	buttonClientiClick: function(inSender) {
 		$.getJSON("http://2.228.76.239/json/ciccio.txt", function(json) {
