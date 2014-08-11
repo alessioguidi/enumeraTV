@@ -133,7 +133,7 @@ async : false,
 dataType : 'json'
 }).responseText;
 }
-var fileURL = "cdvfile://localhost/persistent/enumera/ciccio.json";
+var fileURL = "cdvfile://localhost/persistent/enumera/ciccio.txt";
 var clientiLocal = loadJSON(fileURL);
 if (clientiLocal){
 alert ("Carico clienti");

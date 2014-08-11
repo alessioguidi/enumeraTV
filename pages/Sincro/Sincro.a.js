@@ -73,12 +73,11 @@ timeout: app.parGpsTimeout.getValue("dataValue"),
 enableHighAccuracy: false});
 },
 button1Click: function(inSender) {
-this.progressBar1.setProgress(0);
 // !! Assumes variable fileURL contains a valid URL to a path on the device,
 //    for example, cdvfile://localhost/persistent/path/to/downloads/
-var fileURL = "cdvfile://localhost/persistent/enumera/ciccio.json";
+var fileURL = "cdvfile://localhost/persistent/enumera/ciccio.txt";
 var fileTransfer = new FileTransfer();
-var uri = encodeURI("http://2.228.76.239/ciccio.json");
+var uri = encodeURI("http://2.228.76.239/ciccio.txt");
 fileTransfer.download(
 uri,
 fileURL,
@@ -97,13 +96,10 @@ headers: {
 }
 }
 );
-this.progressBar1.setProgress(50);
-var myList;
-$.getJSON(fileURL)
-.done(function (data) {
-myList = data;
+$.getJSON(fileURL, function(json) {
+app.varClienti.setData(json);
+app.toastSuccess("Clienti sincronizzati con successso");
 });
-app.varClienti.setData(myList);
 },
 buttonClientiClick: function(inSender) {
 $.getJSON("http://2.228.76.239/json/ciccio.txt", function(json) {
@@ -116,8 +112,8 @@ _end: 0
 
 Sincro.widgets = {
 layoutBox1: ["wm.Layout", {"horizontalAlign":"center","verticalAlign":"top"}, {}, {
-button1: ["wm.Button", {"border":"1","caption":"Clienti","height":"80px","margin":"4","showing":false}, {"onclick":"button1Click"}],
-buttonClienti: ["wm.Button", {"border":"1","caption":"Clienti","height":"80px","margin":"4"}, {"onclick":"buttonClientiClick"}]
+button1: ["wm.Button", {"border":"1","caption":"Clienti","height":"80px","margin":"4"}, {"onclick":"button1Click"}],
+buttonClienti: ["wm.Button", {"border":"1","caption":"Clienti","height":"80px","margin":"4","showing":false}, {"onclick":"buttonClientiClick"}]
 }]
 };
 
