@@ -536,7 +536,7 @@ dojo.declare("enumeraTV", wm.Application, {
 				}]
 			}]
 		}], 
-		serviceProvince: ["wm.ServiceVariable", {"inFlightBehavior":"executeLast","operation":"provinceRead","service":"xhrService","startUpdate":true}, {}, {
+		serviceProvince: ["wm.ServiceVariable", {"inFlightBehavior":"executeLast","operation":"provinceRead","service":"xhrService"}, {}, {
 			input: ["wm.ServiceInput", {"type":"provinceReadInputs"}, {}, {
 				binding: ["wm.Binding", {}, {}, {
 					wire: ["wm.Wire", {"expression":undefined,"source":"app.serviceApp.sessionName","targetProperty":"JXSESSNAME"}, {}]

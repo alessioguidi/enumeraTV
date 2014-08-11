@@ -1,6 +1,7 @@
 dojo.declare("Main", wm.Page, {
 "preferredDevice": "desktop",
 start: function() {
+document.addEventListener("deviceready", this.handleDeviceReady, false);
 /*
 // ATTIVO IL TIMOUT IN CASO DI INATTIVITA RIMANDO ALLA HOME
 var timeoutID;
@@ -70,7 +71,6 @@ var data = {
 };
 app.variableAAfuturi.addItem(data, i)
 }
-document.addEventListener("deviceready", this.handleDeviceReady, false);
 },
 handleDeviceReady: function (event) {
 // onSuccess Callback

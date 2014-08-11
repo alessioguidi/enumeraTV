@@ -92,7 +92,7 @@ dojo.declare("Sincro", wm.Page, {
 //    for example, cdvfile://localhost/persistent/path/to/downloads/
         var fileURL = "cdvfile://localhost/persistent/enumera/ciccio.txt";
         var fileTransfer = new FileTransfer();
-        var uri = encodeURI("http://2.228.76.239/ciccio.txt");
+        var uri = encodeURI("http://2.228.76.239/json/ciccio.txt");
 
         fileTransfer.download(
             uri,

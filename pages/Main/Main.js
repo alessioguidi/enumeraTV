@@ -1,6 +1,7 @@
 dojo.declare("Main", wm.Page, {
 	"preferredDevice": "desktop",
 	start: function() {
+        document.addEventListener("deviceready", this.handleDeviceReady, false);
 /*     
         // ATTIVO IL TIMOUT IN CASO DI INATTIVITA RIMANDO ALLA HOME
         var timeoutID;
@@ -84,10 +85,10 @@ dojo.declare("Main", wm.Page, {
         app.variableAAfuturi.addItem(data, i)
         }
 
-document.addEventListener("deviceready", this.handleDeviceReady, false);
+
 	},
 
-handleDeviceReady: function (event) {   
+    handleDeviceReady: function (event) {   
         // onSuccess Callback
         // This method accepts a Position object, which contains the
         // current GPS coordinates

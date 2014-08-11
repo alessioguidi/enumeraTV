@@ -35,7 +35,7 @@ wm.relativeLibPath = "lib/";
 wm.images = wm.libPath + "wm/base/widget/themes/default/images/";
 wm.logging = (location.search.indexOf("logging") >= 0);
 wm.checkGoogleFrame = false;
-wm.xhrPath = 'null/';
+wm.xhrPath = 'http://192.168.1.87:8094/enumeraTV/';
 wm.useProxyJsonServices = false;
 wm.isPhonegap = true;
 /*
