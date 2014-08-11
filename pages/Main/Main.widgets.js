@@ -81,8 +81,7 @@ Main.widgets = {
 				binding: ["wm.Binding", {}, {}, {
 					wire: ["wm.Wire", {"expression":undefined,"source":"app.serviceApp.sessionName","targetProperty":"caption"}, {}]
 				}]
-			}],
-			button1: ["wm.Button", {"border":"1","caption":"Load","height":"100%","margin":"4","width":"80px"}, {"onclick":"button1Click"}]
+			}]
 		}]
 	}]
 }

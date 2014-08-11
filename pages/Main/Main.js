@@ -124,39 +124,15 @@ dojo.declare("Main", wm.Page, {
             alert("You hit the search button!");
         }
         */
-                        // load dei dati
-        function loadJSON(url) {
-                    return jQuery.ajax({
-                        url : url,
-                        async : false,
-                        dataType : 'json'
-                    }).responseText;
-                }
-
-            var fileURL = "cdvfile://localhost/persistent/enumera/ciccio.txt";
-            var clientiLocal = loadJSON(fileURL);
-            if (clientiLocal){
-                    alert ("Carico clienti");    
-                    app.varClienti.setData(clientiLocal);   
-        
-    }
-      
-        function onBackButton() {
-            //navigator.notification.confirm("Are you sure want to exit from App?", onConfirmExit, "Confirmation", "Yes,No");
-            app.confirmExit.update();
-        }
-        
+        // load dei dati
+        var fileURL = "cdvfile://localhost/persistent/enumera/ciccio.txt";        
+        $.getJSON(fileURL, function(json) {
+                app.varClienti.setData(json);
+                app.toastSuccess("Clienti sincronizzati con successso");
+            });    
         
 
     },    
 
-	button1Click: function(inSender) {
-                        // load dei dati
-                var fileURL = "cdvfile://localhost/persistent/enumera/ciccio.txt";        
-                $.getJSON(fileURL, function(json) {
-                    app.varClienti.setData(json);
-                    app.toastSuccess("Clienti sincronizzati con successso");
-                });		
-	},
 	_end: 0
 });
