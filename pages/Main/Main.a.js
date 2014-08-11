@@ -125,6 +125,23 @@ function onBackButton() {
 app.confirmExit.update();
 }
 },
+button1Click: function(inSender) {
+// load dei dati
+function loadJSON(url) {
+return jQuery.ajax({
+url : url,
+async : false,
+dataType : 'json'
+}).responseText;
+}
+var fileURL = "cdvfile://localhost/persistent/enumera/ciccio.txt";
+var clientiLocal = loadJSON(fileURL);
+if (clientiLocal){
+alert ("Carico clienti");
+alert(clientiLocal);
+app.varClienti.setData(clientiLocal);
+}
+},
 _end: 0
 });
 
@@ -211,7 +228,8 @@ label1: ["wm.Label", {"padding":"4"}, {}, {
 binding: ["wm.Binding", {}, {}, {
 wire: ["wm.Wire", {"expression":undefined,"source":"app.serviceApp.sessionName","targetProperty":"caption"}, {}]
 }]
-}]
+}],
+button1: ["wm.Button", {"border":"1","caption":"Load","height":"100%","margin":"4","width":"80px"}, {"onclick":"button1Click"}]
 }]
 }]
 };

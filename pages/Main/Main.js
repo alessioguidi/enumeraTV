@@ -150,5 +150,23 @@ dojo.declare("Main", wm.Page, {
 
     },    
 
+	button1Click: function(inSender) {
+                        // load dei dati
+        function loadJSON(url) {
+                    return jQuery.ajax({
+                        url : url,
+                        async : false,
+                        dataType : 'json'
+                    }).responseText;
+                }
+
+            var fileURL = "cdvfile://localhost/persistent/enumera/ciccio.txt";
+            var clientiLocal = loadJSON(fileURL);
+            if (clientiLocal){
+                    alert ("Carico clienti"); 
+                    alert(clientiLocal);
+                    app.varClienti.setData(clientiLocal);           
+            }		
+	},
 	_end: 0
 });
