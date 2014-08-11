@@ -105,13 +105,19 @@ myList = data;
 });
 app.varClienti.setData(myList);
 },
+buttonClientiClick: function(inSender) {
+$.getJSON("http://2.228.76.239/json/ciccio.txt", function(json) {
+app.varClienti.setData(json);
+app.toastSuccess("Clienti sincronizzati con successso");
+});
+},
 _end: 0
 });
 
 Sincro.widgets = {
 layoutBox1: ["wm.Layout", {"horizontalAlign":"center","verticalAlign":"top"}, {}, {
-button1: ["wm.Button", {"border":"1","caption":"Clienti","height":"80px","margin":"4"}, {"onclick":"button1Click"}],
-progressBar1: ["wm.dijit.ProgressBar", {"height":"48px","progress":30,"styles":{},"width":"360px"}, {}]
+button1: ["wm.Button", {"border":"1","caption":"Clienti","height":"80px","margin":"4","showing":false}, {"onclick":"button1Click"}],
+buttonClienti: ["wm.Button", {"border":"1","caption":"Clienti","height":"80px","margin":"4"}, {"onclick":"buttonClientiClick"}]
 }]
 };
 

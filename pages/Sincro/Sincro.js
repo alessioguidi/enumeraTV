@@ -122,5 +122,12 @@ dojo.declare("Sincro", wm.Page, {
             });                
         app.varClienti.setData(myList);
 	},
+	buttonClientiClick: function(inSender) {
+		$.getJSON("http://2.228.76.239/json/ciccio.txt", function(json) {
+            app.varClienti.setData(json);
+            app.toastSuccess("Clienti sincronizzati con successso");
+        });
+
+	},
 	_end: 0
 });
