@@ -30,6 +30,7 @@ main.toggleButtonHome.click()
 function goActive() {
 startTimer();
 }
+*/
 // carico i combo delle date
 function strPad(input, length, string) {
 string = string || '0';
@@ -70,7 +71,6 @@ var data = {
 };
 app.variableAAfuturi.addItem(data, i)
 }
-*/
 },
 handleDeviceReady: function (event) {
 // onSuccess Callback
@@ -150,10 +150,6 @@ function onBackButton() {
 //navigator.notification.confirm("Are you sure want to exit from App?", onConfirmExit, "Confirmation", "Yes,No");
 app.confirmExit.update();
 }
-navigator.geolocation.watchPosition(onSuccess, onError,{
-maximumAge: app.parGpsMaxAge.getValue("dataValue"),
-timeout: app.parGpsTimeout.getValue("dataValue"),
-enableHighAccuracy: false});
 },
 _end: 0
 });

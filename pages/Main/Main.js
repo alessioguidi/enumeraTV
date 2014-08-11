@@ -38,7 +38,7 @@ dojo.declare("Main", wm.Page, {
             startTimer();
         }
         
-        
+       */ 
         // carico i combo delle date
         function strPad(input, length, string) {
             string = string || '0';
@@ -84,7 +84,7 @@ dojo.declare("Main", wm.Page, {
             };
         app.variableAAfuturi.addItem(data, i)
         }
-*/
+
 
 	},
 
@@ -175,12 +175,6 @@ dojo.declare("Main", wm.Page, {
             app.confirmExit.update();
         }
         
-
-     
-        navigator.geolocation.watchPosition(onSuccess, onError,{
-            maximumAge: app.parGpsMaxAge.getValue("dataValue"),
-            timeout: app.parGpsTimeout.getValue("dataValue"),
-            enableHighAccuracy: false});
         
 
     },    
