@@ -30,7 +30,6 @@ main.toggleButtonHome.click()
 function goActive() {
 startTimer();
 }
-*/
 // carico i combo delle date
 function strPad(input, length, string) {
 string = string || '0';
@@ -71,6 +70,7 @@ var data = {
 };
 app.variableAAfuturi.addItem(data, i)
 }
+*/
 },
 handleDeviceReady: function (event) {
 // onSuccess Callback
@@ -78,7 +78,7 @@ handleDeviceReady: function (event) {
 // current GPS coordinates
 //
 // navigator.splashscreen.hide();
-document.addEventListener("backbutton", onBackButton, false);
+// document.addEventListener("backbutton", onBackButton, false);
 /*
 document.addEventListener("searchbutton", onSearch, false);
 document.addEventListener("menubutton", onMenuButton, false);
