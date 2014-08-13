@@ -8,7 +8,7 @@ dojo.declare("Sincro", wm.Page, {
         window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, gotFS, fail);
         
         function gotFS(fileSystem) {
-            fileSystem.root.getFile("clienti.txt", null, gotFileEntry, fail);
+            fileSystem.root.getFile("clienti.txt",  {create: true}, gotFileEntry, fail);
         }
 
         function gotFileEntry(fileEntry) {
