@@ -113,21 +113,12 @@ this.serviceClienti.update();
 serviceClientiSuccess: function(inSender, inDeprecated) {
 var fileURL = "cdvfile://localhost/persistent/enumera/clienti.txt";
 alert (JSON.stringify(this.serviceClienti.getData()));
-function writeSuccess(){
-alert("Write Succeeded");
-}
-function writeFile() {
-var writer = new FileWriter();
-writer.onwrite = writeSuccess;
-writer.writeAsText(fileURL, JSON.stringify(this.serviceClienti.getData()), false);
-}
-writeFile();
 },
 _end: 0
 });
 
 Sincro.widgets = {
-serviceClienti: ["wm.ServiceVariable", {"inFlightBehavior":"executeLast","operation":"enumera.readClienti","service":"xhrService"}, {"onSuccess":"serviceClientiSuccess"}, {
+serviceClienti: ["wm.ServiceVariable", {"inFlightBehavior":"executeLast","operation":"enumera.readClienti","saveInPhonegap":true,"service":"xhrService"}, {"onSuccess":"serviceClientiSuccess"}, {
 input: ["wm.ServiceInput", {"type":"enumera.readClientiInputs"}, {}, {
 binding: ["wm.Binding", {}, {}, {
 wire1: ["wm.Wire", {"expression":undefined,"source":"app.serviceApp.sessionName","targetProperty":"JXSESSNAME"}, {}]

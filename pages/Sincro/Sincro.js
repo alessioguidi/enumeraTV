@@ -133,17 +133,6 @@ dojo.declare("Sincro", wm.Page, {
 	serviceClientiSuccess: function(inSender, inDeprecated) {
 		var fileURL = "cdvfile://localhost/persistent/enumera/clienti.txt";
     	alert (JSON.stringify(this.serviceClienti.getData()));
-        
-        function writeSuccess(){
-        	alert("Write Succeeded");
-    	}
-
-    	function writeFile() {
-	    	var writer = new FileWriter();
-	    	writer.onwrite = writeSuccess;
-	    	writer.writeAsText(fileURL, JSON.stringify(this.serviceClienti.getData()), false);
-	    }
-        writeFile();
 	},
 	_end: 0
 });
