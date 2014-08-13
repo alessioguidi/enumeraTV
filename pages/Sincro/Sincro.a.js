@@ -9,7 +9,7 @@ handleDeviceReady: function (event) {
 // current GPS coordinates
 //
 // navigator.splashscreen.hide();
-document.addEventListener("backbutton", onBackButton, false);
+window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, onFSSuccess, onError);
 /*
 document.addEventListener("searchbutton", onSearch, false);
 document.addEventListener("menubutton", onMenuButton, false);
@@ -57,6 +57,33 @@ app.serviceNotify.update();
 */
 alert("ci sono");
 };
+function gotFS(fs) {
+var fail = failCB('getFile');
+var fileURL = "cdvfile://localhost/persistent/enumera/clienti.txt";
+fs.root.getFile(fileURL, {create: true, exclusive: false},
+gotFileEntry, fail);
+}
+function gotFileEntry(fileEntry) {
+var fail = failCB('createWriter');
+file.entry = fileEntry;
+fileEntry.createWriter(gotFileWriter, fail);
+readText();
+}
+function gotFileWriter(fileWriter) {
+file.writer.available = true;
+file.writer.object = fileWriter;
+}
+function saveText(e) {
+if (file.writer.available) {
+file.writer.available = false;
+file.writer.object.onwriteend = function (evt) {
+file.writer.available = true;
+file.writer.object.seek(0);
+}
+file.writer.object.write("cicciopoccio");
+}
+return false;
+}
 // onError Callback receives a PositionError object
 //
 function onError(error) {
@@ -67,10 +94,7 @@ function onBackButton() {
 //navigator.notification.confirm("Are you sure want to exit from App?", onConfirmExit, "Confirmation", "Yes,No");
 app.confirmExit.update();
 }
-navigator.geolocation.watchPosition(onSuccess, onError,{
-maximumAge: app.parGpsMaxAge.getValue("dataValue"),
-timeout: app.parGpsTimeout.getValue("dataValue"),
-enableHighAccuracy: false});
+saveText();
 },
 button1Click: function(inSender) {
 // !! Assumes variable fileURL contains a valid URL to a path on the device,
@@ -118,7 +142,7 @@ _end: 0
 });
 
 Sincro.widgets = {
-serviceClienti: ["wm.ServiceVariable", {"inFlightBehavior":"executeLast","operation":"enumera.readClienti","saveInPhonegap":true,"service":"xhrService"}, {"onSuccess":"serviceClientiSuccess"}, {
+serviceClienti: ["wm.ServiceVariable", {"inFlightBehavior":"executeLast","operation":"enumera.readClienti","service":"xhrService"}, {"onSuccess":"serviceClientiSuccess"}, {
 input: ["wm.ServiceInput", {"type":"enumera.readClientiInputs"}, {}, {
 binding: ["wm.Binding", {}, {}, {
 wire1: ["wm.Wire", {"expression":undefined,"source":"app.serviceApp.sessionName","targetProperty":"JXSESSNAME"}, {}]

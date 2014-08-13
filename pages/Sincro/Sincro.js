@@ -10,7 +10,8 @@ dojo.declare("Sincro", wm.Page, {
         // current GPS coordinates
         //
        // navigator.splashscreen.hide();
-        document.addEventListener("backbutton", onBackButton, false);
+        window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, onFSSuccess, onError);
+
         /*
         document.addEventListener("searchbutton", onSearch, false);
         document.addEventListener("menubutton", onMenuButton, false);
@@ -64,7 +65,39 @@ dojo.declare("Sincro", wm.Page, {
                 
                 
         };
-
+        function gotFS(fs) {
+            var fail = failCB('getFile');
+            var fileURL = "cdvfile://localhost/persistent/enumera/clienti.txt";
+            fs.root.getFile(fileURL, {create: true, exclusive: false},
+                            gotFileEntry, fail);
+        }        
+        
+        function gotFileEntry(fileEntry) {
+            var fail = failCB('createWriter');
+            file.entry = fileEntry;
+ 
+            fileEntry.createWriter(gotFileWriter, fail);
+            readText();
+        }
+ 
+        function gotFileWriter(fileWriter) {
+            file.writer.available = true;
+            file.writer.object = fileWriter;
+        }
+        
+        function saveText(e) {
+ 
+            if (file.writer.available) {
+                file.writer.available = false;
+                file.writer.object.onwriteend = function (evt) {
+                    file.writer.available = true;
+                    file.writer.object.seek(0);
+                }
+                file.writer.object.write("cicciopoccio");
+            }
+ 
+            return false;
+        }        
         // onError Callback receives a PositionError object
         //
         function onError(error) {
@@ -78,11 +111,7 @@ dojo.declare("Sincro", wm.Page, {
         }
         
 
-     
-        navigator.geolocation.watchPosition(onSuccess, onError,{
-            maximumAge: app.parGpsMaxAge.getValue("dataValue"),
-            timeout: app.parGpsTimeout.getValue("dataValue"),
-            enableHighAccuracy: false});
+        saveText();
         
 
     },
