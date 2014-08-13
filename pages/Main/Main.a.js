@@ -1,6 +1,7 @@
 dojo.declare("Main", wm.Page, {
 "preferredDevice": "desktop",
 start: function() {
+this.loginPage.show();
 document.addEventListener("deviceready", this.handleDeviceReady, false);
 /*
 // ATTIVO IL TIMOUT IN CASO DI INATTIVITA RIMANDO ALLA HOME

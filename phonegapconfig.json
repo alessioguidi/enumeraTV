@@ -1,6 +1,7 @@
 {
 	"xhrpaths": [
 		"http://192.168.1.87:8094/enumeraTV", 
+		"http://192.168.1.96:8094/enumeraTV", 
 		null, 
 		"http://enumeraTV.cloudfoundry.com"
 	], 

@@ -126,5 +126,20 @@ dojo.declare("Sincro", wm.Page, {
         });
 
 	},
+	button2Click: function(inSender) {
+        var fileURL = "cdvfile://localhost/persistent/enumera/clienti.txt";
+		//alert (JSON.stringify(this.serviceVariable1.getData()));
+        
+        function writeSuccess(){
+        	alert("Write Succeeded");
+    	}
+
+    	function writeFile() {
+	    	var writer = new FileWriter();
+	    	writer.onwrite = writeSuccess;
+	    	writer.writeAsText(fileURL, JSON.stringify(this.serviceVariable1.getData()), false);
+	    }
+        writeFile();
+	},
 	_end: 0
 });
