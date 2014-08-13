@@ -127,8 +127,12 @@ dojo.declare("Sincro", wm.Page, {
 
 	},
 	button2Click: function(inSender) {
-        var fileURL = "cdvfile://localhost/persistent/enumera/clienti.txt";
-		alert (JSON.stringify(this.serviceClienti.getData()));
+        this.serviceClienti.update();
+
+	},
+	serviceClientiSuccess: function(inSender, inDeprecated) {
+		var fileURL = "cdvfile://localhost/persistent/enumera/clienti.txt";
+    	alert (JSON.stringify(this.serviceClienti.getData()));
         
         function writeSuccess(){
         	alert("Write Succeeded");

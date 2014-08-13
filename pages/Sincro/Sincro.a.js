@@ -108,6 +108,9 @@ app.toastSuccess("Clienti sincronizzati con successso");
 });
 },
 button2Click: function(inSender) {
+this.serviceClienti.update();
+},
+serviceClientiSuccess: function(inSender, inDeprecated) {
 var fileURL = "cdvfile://localhost/persistent/enumera/clienti.txt";
 alert (JSON.stringify(this.serviceClienti.getData()));
 function writeSuccess(){
@@ -124,7 +127,7 @@ _end: 0
 });
 
 Sincro.widgets = {
-serviceClienti: ["wm.ServiceVariable", {"inFlightBehavior":"executeLast","operation":"enumera.readClienti","service":"xhrService","startUpdate":true}, {}, {
+serviceClienti: ["wm.ServiceVariable", {"inFlightBehavior":"executeLast","operation":"enumera.readClienti","service":"xhrService"}, {"onSuccess":"serviceClientiSuccess"}, {
 input: ["wm.ServiceInput", {"type":"enumera.readClientiInputs"}, {}, {
 binding: ["wm.Binding", {}, {}, {
 wire1: ["wm.Wire", {"expression":undefined,"source":"app.serviceApp.sessionName","targetProperty":"JXSESSNAME"}, {}]
